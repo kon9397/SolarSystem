@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'Furore';
+  src: url('../fonts/Furore.otf');
+}
+html,
+body {
+  font-size: 16px;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.btn {
+  padding: 12px 15px;
+  background-color: #FA167A;
+  border-radius: 7px;
+  font-size: 1.12rem;
+  color: #000;
+  font-family: "Noto Sans", sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+.top-section {
+  background: url('../img/banner.png') no-repeat;
+  background-size: 100%;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header .header-logo {
+  width: 7%;
+}
+.header .header-logo img {
+  width: 100%;
+  min-width: 73px;
+}
+.header .header-nav {
+  width: 57%;
+}
+.header .header-nav .nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header .header-nav .nav-list li a {
+  font-size: 1.12rem;
+  font-family: "Noto Sans", sans-serif;
+}
+.banner {
+  padding: 160px 0;
+}
+.banner .banner-headline {
+  color: #FA167A;
+  font-family: "Furore", sans-serif;
+  font-size: 2.26rem;
+  width: 48%;
+}
+.banner .banner-text {
+  font-size: 1.12rem;
+  font-family: "Noto Sans", sans-serif;
+  color: #fff;
+  width: 40%;
+  line-height: 1.5;
+  margin: 15px 0;
+}

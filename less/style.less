@@ -1,0 +1,98 @@
+// out: ../css/
+
+@headlineFont: "Furore", sans-serif;
+@primaryFont: "Noto Sans", sans-serif;
+
+@primaryColor: #FA167A;
+@secondaryColor: #fff;
+
+@font-face {
+    font-family: 'Furore';
+    src: url('../fonts/Furore.otf');
+}
+
+html, body {
+    font-size: 16px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.flexbox() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 12px 15px;
+    background-color: @primaryColor;
+    border-radius: 7px;
+    font-size: 1.12rem;
+    color: #000;
+    font-family: @primaryFont;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.top-section {
+    background: url('../img/banner.png') no-repeat;
+    background-size: 100%;
+}
+
+.header {
+    .container {
+        .flexbox;
+    }
+
+    .header-logo {
+        width: 7%;
+
+        img {
+            width: 100%;
+            min-width: 73px;
+        }
+    }
+
+    .header-nav {
+        width: 57%;
+        
+        .nav-list {
+            list-style: none;
+            .flexbox;
+
+            li {
+
+                a {
+                    font-size: 1.12rem;
+                    font-family: @primaryFont;
+                }
+            }
+        }
+    }
+}
+
+.banner {
+    padding: 160px 0;
+    .banner-headline {
+        color: @primaryColor;
+        font-family: @headlineFont;
+        font-size: 2.26rem;
+        width: 48%;
+        
+    }
+
+    .banner-text {
+        font-size: 1.12rem;
+        font-family: @primaryFont;
+        color: @secondaryColor;
+        width: 40%;
+        line-height: 1.5;
+        margin: 15px 0;
+    }
+}
